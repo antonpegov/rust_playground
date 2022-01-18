@@ -2,6 +2,8 @@ mod config;
 mod models;
 mod routes;
 
+use rand::Rng;
+use std::cmp::Ordering;
 use std::io;
 
 use crate::config::print_config as log_config;
@@ -30,7 +32,7 @@ fn main() {
             Err(_) => continue,
         };
 
-        println!("I guessed: {guess}");
+        println!("I guessed: {secret_number}");
 
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("Too small!"),
