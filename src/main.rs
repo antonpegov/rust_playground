@@ -2,6 +2,7 @@ mod config;
 mod models;
 mod routes;
 
+use rand;
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
