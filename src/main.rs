@@ -1,4 +1,5 @@
 mod config;
+mod generics;
 mod models;
 mod routes;
 
